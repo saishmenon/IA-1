@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        #paper{
+            
+            background-color: aqua;
+        }
+    </style>
+    
+    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/paper-full.js"></script>
+    <script type="text/paperscript" canvas="paper">
+        $.ajax({
+            
+        });
+    </script>
+</head>
+<body>
+    <canvas id="paper" width="500px" height="200px" resize>
+        
+    </canvas>
+    
+    <script>
+            $(document).ready(function(){
+               $("#paper").click(function(){
+                   alert("clicked!");
+               }); 
+            });
+    </script>
+</body>
+</html>
