@@ -9,20 +9,35 @@
             
             background-color: aqua;
         }
+        
+        #paper1{
+            background-color: black;
+        }
     </style>
     
     <script src="assets/js/jQuery.js"></script>
     <script src="assets/js/paper-full.js"></script>
     <script type="text/paperscript" canvas="paper">
-        var path = new Path.Rectangle({
-            point: [100,100],
-            size: [100,100],
-            strokeColor: 'black'
+        var path = new Path.Circle({
+            center: view.center,
+            radius: 100,
+            fillColor: 'green'
         });
         
         function onFrame(event){
-        //Each frame rotate the path by 3 degrees
-        path.rotate(1000);
+            path.fillColor.hue += 1;
+        }
+    </script>
+    
+    <script type="text/paperscript" canvas="paper1">
+        var path = new Path.Rectangle({
+            point: [100,100],
+            size: [150,150],
+            strokeColor: 'white'
+        });
+        
+        function onFrame(event){
+            path.rotate(1);
         }
     </script>
 </head>
@@ -30,6 +45,9 @@
     <canvas id="paper" width="500px" height="350px" resize>
         
     </canvas>
+    <br>
+    <br>
+    <canvas id="paper1" width="500px" height="350px" resize></canvas>
     
     <script>
             $(document).ready(function(){
