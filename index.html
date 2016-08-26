@@ -14,13 +14,20 @@
     <script src="assets/js/jQuery.js"></script>
     <script src="assets/js/paper-full.js"></script>
     <script type="text/paperscript" canvas="paper">
-        $.ajax({
-            
+        var path = new Path.Rectangle({
+            point: [100,100],
+            size: [100,100],
+            strokeColor: 'black'
         });
+        
+        function onFrame(event){
+        //Each frame rotate the path by 3 degrees
+        path.rotate(1000);
+        }
     </script>
 </head>
 <body>
-    <canvas id="paper" width="500px" height="200px" resize>
+    <canvas id="paper" width="500px" height="350px" resize>
         
     </canvas>
     
