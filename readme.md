@@ -39,4 +39,5 @@ Lynda.com - Lynda.com - https://www.lynda.com/D3js-tutorials
 RIT Licence
 
 <a href="http://rawgit.com/saishmenon/IA-1/master/index.html">Demo 1 - With Random Data</a> <br/><br/>
-<a href="http://rawgit.com/saishmenon/IA-1/master/index2.html">Demo 2 - With live JSON File</a>
+<a href="http://rawgit.com/saishmenon/IA-1/master/index2.html">Demo 2 - With live JSON File</a><br/><br/>
+<a href="http://rawgit.com/saishmenon/IA-1/master/test.html">Demo 3 - With Live Data Stream</a><br/><br/>
