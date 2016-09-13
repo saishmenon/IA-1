@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+       <link rel="stylesheet" href="css/base-style.css">
+       <link rel="stylesheet" href="css/style.css">
+    
+        
+        <script>
+            var subKey = 'sub-c-b1cadece-f0fa-11e3-928e-02ee2ddab7fe';
+            var channelName= 'pubnub-weather';
+
+            PUBNUB.init({
+                subscribe_key: subKey
+                }).subscribe({
+                channel : channelName,
+                message : function(msg){ console.log(msg.wind_direction) }
+                });
+        </script>
+</head>
+<body>
+    <div id="content"></div>
+    
+    <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/script-live-data.js"></script>
+</body>
+</html>

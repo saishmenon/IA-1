@@ -1,0 +1,83 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans:300,400,700';
+
+/* 
+    Eric Meyer's Reset CSS v2.0 - http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background: #fdf6e3;
+    color: #475b62;
+    line-height: 1.2em;
+    font-weight: 300;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Open Sans', sans-serif;
+    color: #cb4b19;
+    font: 1.75em;
+    margin-bottom: 0.4em;
+}
+
+h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
