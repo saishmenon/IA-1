@@ -1,12 +1,12 @@
 var barData = [];
 
-d3.json('http://mysafeinfo.com/api/data?list=worldcitiesbypop_2015&format=json', function(data){
-//      console.log(data.length);  
-    for(var i=0; i<data.length; i++){
-        barData.push(data[i].pop);
-    }
-    
-    console.log(barData[0]);
+PUBNUB.init({
+subscribe_key: 'sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe'
+}).subscribe({
+channel : 'pubnub-sensor-network',
+message : function(msg){ barData.push(msg.humidity); console.log(barData); }
+});
+    console.log(barData.length);
     
     var margin = {
       top: 30,
@@ -119,4 +119,3 @@ d3.json('http://mysafeinfo.com/api/data?list=worldcitiesbypop_2015&format=json',
             .style('stroke', '#000')
         hGuide.selectAll('line')
             .style('stroke', '#000')
-});
